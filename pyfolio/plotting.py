@@ -660,6 +660,7 @@ def show_perf_stats(returns, factor_returns=None, positions=None,
         float_format='{0:.2f}'.format,
         header_rows=header_rows,
     )
+    return perf_stats, header_rows
 
 
 def plot_returns(returns,

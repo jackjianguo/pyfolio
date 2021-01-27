@@ -463,7 +463,7 @@ def create_returns_tear_sheet(returns, positions=None,
     if benchmark_rets is not None:
         returns = utils.clip_returns_to_benchmark(returns, benchmark_rets)
 
-    plotting.show_perf_stats(returns, benchmark_rets,
+    perf_stats, header_show = plotting.show_perf_stats(returns, benchmark_rets,
                              positions=positions,
                              transactions=transactions,
                              turnover_denom=turnover_denom,
@@ -593,6 +593,7 @@ def create_returns_tear_sheet(returns, positions=None,
 
     if return_fig:
         return fig
+    return perf_stats, header_show
 
 
 @plotting.customize

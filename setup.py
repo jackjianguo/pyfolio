@@ -5,7 +5,7 @@ from setuptools import setup
 
 import versioneer
 
-DISTNAME = 'pyfolio'
+DISTNAME = 'jj-pyfolio'
 DESCRIPTION = "pyfolio is a Python library for performance"
 "and risk analysis of financial portfolios"
 LONG_DESCRIPTION = """pyfolio is a Python library for performance and risk analysis of
@@ -45,7 +45,7 @@ install_reqs = [
     'ipython>=3.2.3' if support_ipython_6 else 'ipython>=3.2.3, <6',
     'matplotlib>=1.4.0',
     'numpy>=1.11.1',
-    'pandas>=0.18.1',
+    'pandas>=0.18.1, <=0.22.0',
     'pytz>=2014.10',
     'scipy>=0.14.0',
     'scikit-learn>=0.16.1',
